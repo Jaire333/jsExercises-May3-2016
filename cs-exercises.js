@@ -12,6 +12,9 @@
 function exampleTwo(flag) {
   if (flag) {
     return "true";
+  
+    
+    
   }
 }
 
@@ -23,6 +26,13 @@ function exampleTwo(flag) {
     checkBirthday(true) -> "It's you're birthday!"
 */
 
+function checkBirthday(partner) {
+  if (partner) {
+   return "It's you're birthday!" 
+  }
+}
+
+
 
 /*
   Create a function named 'checkHoliday' with one parameter.
@@ -31,6 +41,13 @@ function exampleTwo(flag) {
   ie:
     checkHoliday(true) -> "It's time to go to school!"
 */
+
+function checkHoliday(music){
+  
+  if(!music){
+  return  "It's time to go to school!"
+  }
+}
 
 
 /*
@@ -41,6 +58,18 @@ function exampleTwo(flag) {
     light(true) -> "Turn light off"
     light(false) -> "Turn light on"
 */
+function light(partner){
+  if (partner)
+  return "Turn light off"
+  
+if (!partner)
+
+
+ return "Turn light on"  
+  
+}
+
+
 
 
 /*
@@ -55,6 +84,16 @@ function exampleTwo(flag) {
 */
 
 
+function engine(music,partner){
+  if (partner && music)
+  return "Rev up"
+ 
+else (!music) 
+  
+  return "Shutdown"
+  
+};
+
 /*
   Create a function named 'gradeScore' with one parameter.
   Name the parameter anything you want
@@ -65,6 +104,26 @@ function exampleTwo(flag) {
     gradeScore(81) -> "B"
     gradeScore(80) -> "C"
 */
+
+
+
+function gradeScore(music){
+  if(music > 90){
+ return  "A";
+}
+ else if(music> 80){
+   return "B";
+ }  
+ 
+ else{
+  return "C";
+ }  
+}
+   
+   
+   
+
+
 
 
 /*
@@ -81,3 +140,19 @@ function exampleTwo(flag) {
     imDone(false, false, true) -> "no"
     imDone(false, false, false) -> "no"
 */
+function imDone(finish, done, score) {
+  if (score && done || finish) {
+    if (score || done) {
+      return "yes";
+    }
+    else {
+      return "no";
+    }
+  }
+  else if (score && finish) {
+    return "no";
+  }
+  else {
+    return "no";
+  }
+}
